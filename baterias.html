@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111610">
+  <meta name="description" content="Selecione seu drone XAG para consultar baterias e confirmar compatibilidade com a Tech Drones.">
+  <title>Baterias XAG | Tech Drones</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Tech Drones — início"><span class="brand-mark" aria-hidden="true">TD</span><span>TECH DRONES<small>LINHA XAG</small></span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html#modelos">Modelos</a><a href="pecas.html">Peças</a><a href="baterias.html" aria-current="page">Baterias</a>
+        <a class="button button--small" href="index.html#contato">Fale com a equipe</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container catalog-page-main" data-catalog-kind="baterias">
+    <nav class="breadcrumbs" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Baterias</span></nav>
+    <section class="catalog-intro" aria-labelledby="catalog-title">
+      <span class="eyebrow">Energia e carregamento</span>
+      <h1 id="catalog-title">Baterias XAG para o seu drone</h1>
+      <p>Selecione o modelo para consultar baterias. O tipo correto depende do drone e da configuração; confirme a compatibilidade com a equipe.</p>
+    </section>
+    <section class="catalog-panel" aria-labelledby="model-label">
+      <label class="model-select-label" id="model-label" for="model-select">Qual é o modelo do seu drone?</label>
+      <select class="model-select" id="model-select">
+        <option value="">Selecione um modelo</option>
+        <option value="XAG P60">XAG P60</option>
+        <option value="XAG P100 Pro">XAG P100 Pro</option>
+        <option value="XAG P120 Pro">XAG P120 Pro</option>
+        <option value="XAG P150">XAG P150</option>
+        <option value="XAG P150 Max">XAG P150 Max</option>
+      </select>
+      <div class="catalog-state" id="catalog-state" aria-live="polite">
+        <span class="catalog-state-icon" aria-hidden="true">+</span>
+        <h2 id="catalog-state-title">Escolha um modelo</h2>
+        <p id="catalog-state-message">A lista de baterias por modelo ainda está sendo cadastrada. Selecione seu drone para pedir uma consulta específica.</p>
+        <a class="button is-hidden" id="catalog-contact" href="#" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">Consultar baterias <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <p class="catalog-disclaimer">Ainda não há uma lista de baterias confirmada para exibição. Informe o modelo e a equipe verificará a bateria e o carregador adequados.</p>
+    <nav class="catalog-switch" aria-label="Outros catálogos"><a href="pecas.html">Ver peças XAG <span aria-hidden="true">→</span></a><a href="index.html#modelos">Voltar aos drones</a></nav>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="index.html" aria-label="Tech Drones — início"><span class="brand-mark" aria-hidden="true">TD</span><span>TECH DRONES<small>LINHA XAG</small></span></a>
+      <p>Consulte condições, compatibilidade e disponibilidade antes da compra.</p>
+      <small>XAG é marca de seus respectivos titulares. Tech Drones é uma loja independente.</small>
+    </div>
+  </footer>
+  <script src="catalogo.js" defer></script>
+</body>
+</html>
