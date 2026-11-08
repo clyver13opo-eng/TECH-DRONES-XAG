@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soluções tecnológicas com drones para mapeamento, pulverização agrícola e captação de imagens.">
     <title>Tech Drones XAG | Soluções Tecnológicas</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
@@ -13,52 +14,77 @@
         .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
         .hero { text-align: center; margin-bottom: 50px; background: linear-gradient(135deg, #1e293b, #111827); padding: 40px; border-radius: 12px; border: 1px solid #334155; }
         .hero h2 { font-size: 2.2rem; margin-bottom: 15px; color: #fff; }
-        .hero p { color: #cbd5e1; font-size: 1.1rem; max-width: 600px; margin: 0 auto 25px; }
-        .btn-principal { display: inline-block; background: #38bdf8; color: #0b0f19; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s; }
-        .btn-principal:hover { background: #0ea5e9; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2); }
-        .grid-servicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { background: #1e293b; padding: 25px; border-radius: 10px; border: 1px solid #334155; transition: transform 0.3s; }
-        .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
-        .card h3 { color: #38bdf8; margin-bottom: 10px; font-size: 1.3rem; }
-        .card p { color: #94a3b8; font-size: 0.95rem; }
+        .hero p { color: #cbd5e1; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        h2.section-title { text-align: center; margin: 40px 0 20px; }
+        .grid-servicos, .grid-produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 30px; }
+        .card, .card-produto { background: #1e293b; padding: 25px; border-radius: 10px; border: 1px solid #334155; transition: transform 0.3s, border-color 0.3s; }
+        .card:hover, .card-produto:hover { transform: translateY(-5px); border-color: #38bdf8; }
+        .card h3, .card-produto h3 { color: #38bdf8; margin-bottom: 10px; font-size: 1.2rem; }
+        .card p, .descricao-curta { color: #cbd5e1; font-size: 0.95rem; }
+        .imagem-produto { display: grid; place-items: center; min-height: 180px; margin: -5px -5px 20px; border-radius: 8px; background: linear-gradient(135deg, #0f172a, #334155); color: #94a3b8; text-align: center; }
+        .preco { margin-top: 16px; color: #38bdf8; font-size: 1.25rem; font-weight: 700; }
+        .aviso-compra { margin-top: 8px; color: #94a3b8; font-size: 0.85rem; }
         footer { text-align: center; padding: 40px 20px; color: #64748b; font-size: 0.85rem; border-top: 1px solid #1e293b; margin-top: 60px; }
+        @media (max-width: 600px) {
+            .container { margin: 24px auto; }
+            .hero { padding: 28px 20px; }
+            .hero h2 { font-size: 1.7rem; }
+        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>TECH DRONES XAG</h1>
         <p>Alta tecnologia e precisão para o seu negócio</p>
     </header>
 
-    <div class="container">
+    <main class="container">
         <section class="hero">
             <h2>Soluções Avançadas com Drones</h2>
             <p>Transforme a gestão visual e a produtividade da sua empresa ou lavoura com a tecnologia dos drones líderes de mercado.</p>
-            <!-- Substitua o número abaixo pelo seu WhatsApp real para receber os clientes -->
-            <a href="https://wa.me." target="_blank" class="btn-principal">Fale Conosco no WhatsApp</a>
         </section>
 
-        <h2 style="text-align: center; margin-bottom: 10px;">Nossos Serviços</h2>
-        <section class="grid-servicos">
-            <div class="card">
-                <h3>🛸 Mapeamento e Topografia</h3>
-                <p>Imagens aéreas de alta definição processadas para altimetria, curvas de nível e modelos digitais de terreno com máxima precisão.</p>
-            </div>
-            <div class="card">
-                <h3>🌱 Pulverização Agrícola</h3>
-                <p>Aplicação localizada e inteligente de insumos com tecnologia XAG, reduzindo o desperdício e protegendo o solo e a cultura.</p>
-            </div>
-            <div class="card">
-                <h3>📸 Captação de Imagens</h3>
-                <p>Vídeos e fotos institucionais em alta resolução (4K) para acompanhamento de obras, vistorias industriais e publicidade comercial.</p>
+        <section aria-labelledby="servicos-title">
+            <h2 class="section-title" id="servicos-title">Nossos Serviços</h2>
+            <div class="grid-servicos">
+                <article class="card">
+                    <h3>🛸 Mapeamento e Topografia</h3>
+                    <p>Imagens aéreas de alta definição processadas para altimetria, curvas de nível e modelos digitais de terreno com máxima precisão.</p>
+                </article>
+                <article class="card">
+                    <h3>🌱 Pulverização Agrícola</h3>
+                    <p>Aplicação localizada e inteligente de insumos com tecnologia XAG, reduzindo o desperdício e protegendo o solo e a cultura.</p>
+                </article>
+                <article class="card">
+                    <h3>📸 Captação de Imagens</h3>
+                    <p>Vídeos e fotos institucionais em alta resolução (4K) para acompanhamento de obras, vistorias industriais e publicidade comercial.</p>
+                </article>
             </div>
         </section>
-    </div>
+
+        <section aria-labelledby="produtos-title">
+            <h2 class="section-title" id="produtos-title">🛸 Nosso Catálogo de Equipamentos</h2>
+            <div class="grid-produtos">
+                <article class="card-produto">
+                    <div class="imagem-produto" role="img" aria-label="Foto do Drone Agrícola XAG P100 Pro ainda não cadastrada">Foto em breve</div>
+                    <h3>Drone Agrícola XAG P100 Pro</h3>
+                    <p class="descricao-curta">Alta capacidade de pulverização (40L) e espalhamento inteligente para grandes lavouras.</p>
+                    <p class="preco">R$ 89.900,00</p>
+                    <p class="aviso-compra">Link de compra em breve.</p>
+                </article>
+                <article class="card-produto">
+                    <div class="imagem-produto" role="img" aria-label="Foto do Drone de Mapeamento XAG V40 ainda não cadastrada">Foto em breve</div>
+                    <h3>Drone de Mapeamento XAG V40</h3>
+                    <p class="descricao-curta">Design revolucionário de asa dupla para mapeamento dinâmico e imagens multiespectrais.</p>
+                    <p class="preco">R$ 54.000,00</p>
+                    <p class="aviso-compra">Link de compra em breve.</p>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Tech Drones XAG. Todos os direitos reservados.<br>Domínio oficial registrado: tech-drones-xag.com.br</p>
     </footer>
-
 </body>
 </html>
